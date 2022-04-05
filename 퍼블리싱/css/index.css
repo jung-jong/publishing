@@ -1,0 +1,120 @@
+.wrap {
+  position: relative;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  background-color: gray;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+header .logo {
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 2rem;
+}
+header .login {
+  float: right;
+  margin-right: 2rem;
+}
+.side_menu {
+  width: 15%;
+  height: calc(100vh - 50px);
+  background-color: silver;
+  padding: 1rem;
+  /* padding-left: 2rem; */
+  border: 1px solid black;
+  border-top: none;
+  position: absolute;
+}
+.side_menu a {
+  display: block;
+}
+.side_menu .dep1 {
+  margin-bottom: 0.5rem;
+}
+.side_menu .dep2 {
+  padding-left: 2rem;
+  line-height: 2rem;
+  /* display: none; */
+}
+.bold {
+  font-weight: bold;
+}
+section {
+  width: 85%;
+  height: calc(100vh - 50px);
+  position: absolute;
+  right: 0;
+  border-right: 1px solid black;
+}
+section .select_menu {
+  display: flex;
+  align-items: center;
+}
+section .select_menu h3,
+p {
+  margin: 1rem;
+  margin-left: 2rem;
+}
+section .select_menu h3 {
+  font-weight: bold;
+  margin-right: 0;
+}
+section .select_menu p {
+  font-size: 1.5rem;
+}
+section .search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px;
+}
+section .search .tag {
+  position: absolute;
+  left: 20px;
+}
+section .search select {
+  width: 100px;
+}
+section .search input {
+  width: 200px;
+}
+.table_wrap {
+  margin: 20px;
+}
+table {
+  text-align: center;
+  padding: 20px;
+}
+table thead {
+  background-color: silver;
+}
+table thead tr th {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: none;
+  border-bottom: none;
+}
+.paging {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 95%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  padding: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.paging span {
+  cursor: pointer;
+  padding: 0 10px;
+}
